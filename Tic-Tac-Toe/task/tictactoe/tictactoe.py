@@ -48,14 +48,13 @@ def check_game_state():
         print("Impossible")
     elif check_x_wins:
         print("X wins")
-        return 1
     elif check_o_wins:
         print("O wins")
-        return 1
     elif count_blank == 0:
         print("Draw")
-        return 1
-    return 0
+    else:
+        return 0
+    return 1
 
 
 game_coordinates = (11, 12, 13, 21, 22, 23, 31, 32, 33)
